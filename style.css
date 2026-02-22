@@ -47,28 +47,33 @@ body {
 
 /* Premium Hero Section */
 .hero {
-    /* Using a high-end, darkened image of India's Parliament or architecture */
-    background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), 
-                url('https://images.unsplash.com/photo-1548013146-72479768bbaa?q=80&w=1200'); 
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding: 120px 20px;
+    min-height: 200px; /* Forces a professional, slim height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* The Article Card Grid */
 .container {
-    max-width: 900px;
-    margin: -60px auto 40px; /* Overlaps the hero slightly */
+    max-width: 850px;
+    margin: -40px auto 60px; /* This "pulls" the article up onto the hero image slightly */
     padding: 0 20px;
+    position: relative;
+    z-index: 10;
 }
 
 .article-card {
-    background: white;
-    padding: 40px;
-    border-radius: 4px;
-    border: 1px solid var(--border);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-    margin-bottom: 30px;
+    background: #ffffff;
+    padding: 50px;
+    border-radius: 0; /* Sharp corners look more "Premium/Newspaper" */
+    border: 1px solid #e2e8f0;
+    border-top: 5px solid var(--primary); /* Thick top border for authority */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08); /* Deep shadow to separate from background */
+}
+
+.article-card h3 {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-top: 10px;
+    line-height: 1.3;
 }
