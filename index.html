@@ -3,84 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bharat Insight | Shaping a Stronger Nation</title>
+    <title>Bharat Insight | The Voice of Modern India</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <div style="height: 4px; width: 100%; display: flex; position: fixed; top: 0; z-index: 1001;">
+        <div style="flex: 1; background: #FF9933;"></div>
+        <div style="flex: 1; background: #FFFFFF;"></div>
+        <div style="flex: 1; background: #128807;"></div>
+    </div>
+
     <nav class="navbar">
-        <div class="logo">BHARAT INSIGHT</div>
+        <div class="logo"><a href="index.html">BHARAT INSIGHT</a></div>
         <ul>
-            <li><a href="#">Articles</a></li>
-            <li><a href="#">Editor's Desk</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
         </ul>
     </nav>
 
-   <header class="hero" style="
-    background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), 
-    url('https://images.unsplash.com/photo-1587474260584-16657462bb96?q=80&w=1200'); 
-    background-size: cover; 
-    background-position: center; 
-    padding: 60px 20px; /* Reduced padding from 120px to 60px */
-    text-align: center;
-    color: white;">
-    
-    <h1 style="font-size: 2.5rem; letter-spacing: 4px; margin-bottom: 10px; font-weight: 900;">BHARAT INSIGHT</h1>
-    <div style="width: 50px; height: 3px; background: var(--accent); margin: 0 auto 15px;"></div>
-    <p style="font-size: 1rem; font-style: italic; opacity: 0.8; letter-spacing: 1px;">Intellectual Perspectives on a Rising Nation</p>
-</header>
+    <header class="hero">
+        <h1 style="font-family: 'Playfair Display', serif; font-size: clamp(2rem, 8vw, 4rem); letter-spacing: 6px; margin: 0;">BHARAT INSIGHT</h1>
+        <p style="font-family: 'Inter', sans-serif; text-transform: uppercase; letter-spacing: 4px; font-size: 0.75rem; opacity: 0.9; margin-top: 10px;">Intellectual Honesty • National Progress</p>
+    </header>
 
     <main class="container">
-        <article class="post">
-            <span class="category">Editor's Viewpoint</span>
-            <h2>The Future of Digital Education in Rural India</h2>
-            <p class="meta">Published on February 22, 2026 • 5 min read</p>
+        <div class="article-card">
+            <span class="category-tag">Critical Analysis • Social Justice</span>
+            <h2 style="font-family: 'Playfair Display', serif; font-size: 2.2rem; line-height: 1.2; margin: 15px 0 25px;">Who Truly Benefits? Rethinking Access Within the Reserved Category</h2>
             
-            <div class="content">
-                <p>India is at a crossroads where technology meets tradition. As we bridge the digital divide, we must ask: Are we building infrastructure or just installing screens? This week, we explore how local leadership is transforming schools in Bihar and Tamil Nadu...</p>
-                </div>
+            <p style="font-family: 'Inter', sans-serif; font-size: 1.1rem; color: #4b5563; margin-bottom: 35px; border-left: 3px solid var(--gold); padding-left: 20px;">
+                "India’s reservation system was established with a powerful objective... but are the benefits consistently reaching those who need them the most?"
+            </p>
 
-            <div class="interaction-zone">
-                <h3>Voice Your Opinion</h3>
-                <p>Do you believe rural schools are ready for 100% digital curriculum?</p>
-                
-                <div class="poll-box">
-                    <button onclick="vote('yes')">🇮🇳 Yes, they are ready</button>
-                    <button onclick="vote('no')">⌛ Need more infrastructure</button>
-                    <p id="poll-msg"></p>
-                </div>
-
-                <div class="comments">
-                    <h3>Discussion</h3>
-                    <p>Log in with GitHub to share your perspective.</p>
-                    <div class="giscus"></div>
-                </div>
-            </div>
-        </article>
+            <a href="reservation-debate.html" style="
+                display: inline-block;
+                padding: 18px 45px;
+                background: var(--ink);
+                color: white;
+                text-decoration: none;
+                font-family: 'Inter', sans-serif;
+                font-size: 0.8rem;
+                font-weight: 600;
+                letter-spacing: 2px;
+                transition: all 0.3s ease;
+                border: 1px solid var(--ink);
+            " onmouseover="this.style.background='transparent'; this.style.color='var(--ink)';" onmouseout="this.style.background='var(--ink)'; this.style.color='white';">
+                READ THE FULL VIEWPOINT
+            </a>
+        </div>
     </main>
-<section class="latest-articles">
-    <h2>Latest Insights</h2>
-    <div class="article-card" style="border: 1px solid #ddd; padding: 20px; border-radius: 8px;">
-        <span class="category">Editor's Viewpoint</span>
-        <h3>Who Truly Benefits? Rethinking Access Within the Reserved Category</h3>
-        <p>An exploration into the equitable distribution of reservation benefits in modern India...</p>
-        <a href="reservation-debate.html" style="color: #e67e22; font-weight: bold; text-decoration: none;">Read Full Article →</a>
-    </div>
-</section>
-    <script>
-        function vote(choice) {
-            document.getElementById('poll-msg').innerText = "Thank you for voting '" + choice + "'! We use these results for our monthly report.";
-        }
-    </script>
-    <footer style="background: var(--primary); color: white; padding: 40px 10%; margin-top: 100px; text-align: center;">
-    <p><strong>VoiceVista: Bharat Insight</strong></p>
-    <p style="opacity: 0.7; font-size: 0.9rem;">Empowering the citizens of India through informed discussion and balanced viewpoints.</p>
-    <div style="margin-top: 20px;">
-        <a href="#" style="color: white; margin: 0 10px;">About</a>
-        <a href="#" style="color: white; margin: 0 10px;">Archives</a>
-        <a href="#" style="color: white; margin: 0 10px;">Contact</a>
-    </div>
-</footer>
-    </body>
+
+    <footer style="text-align: center; padding: 80px 0 40px; color: #94a3b8; font-family: 'Inter', sans-serif; font-size: 0.7rem; letter-spacing: 2px;">
+        © 2026 BHARAT INSIGHT • SHAPING THE NATIONAL DISCOURSE
+    </footer>
+
+</body>
 </html>
