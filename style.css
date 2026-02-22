@@ -1,93 +1,74 @@
 :root {
-    --primary: #1a202c; /* Professional Navy */
-    --accent: #d97706;  /* Sophisticated Saffron */
-    --bg: #ffffff;
-    --text-main: #2d3748;
-    --text-muted: #718096;
+    --primary: #0f172a;    /* Deep Midnight Navy */
+    --accent: #b45309;     /* Burnt Saffron (Classy, not bright) */
+    --bg-light: #fcfcfc;   /* Off-white paper feel */
+    --text-head: #1e293b;
+    --text-body: #334155;
+    --border: #e2e8f0;
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    line-height: 1.7;
-    color: var(--text-main);
+    font-family: 'Charter', 'Georgia', serif; /* Serif fonts look more premium for news */
+    background-color: var(--bg-light);
+    color: var(--text-body);
     margin: 0;
-    background-color: #f7fafc;
+    line-height: 1.8;
 }
 
-/* Elegant Navigation */
+/* Elegant Navbar */
 .navbar {
-    background: var(--primary);
-    padding: 1rem 10%;
+    background: white;
+    border-bottom: 3px solid var(--primary);
+    padding: 1.5rem 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 }
 
 .logo a {
-    color: white;
-    text-decoration: none;
-    font-weight: 800;
-    letter-spacing: 1px;
-    font-size: 1.2rem;
-}
-
-/* Article Container */
-.container {
-    max-width: 750px; /* Narrower for better reading speed */
-    margin: 50px auto;
-    background: white;
-    padding: 60px;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-}
-
-/* Typography Polish */
-h1 {
-    font-size: 2.8rem;
-    line-height: 1.2;
     color: var(--primary);
-    margin-bottom: 20px;
+    text-decoration: none;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.4rem;
 }
 
-.meta {
-    border-top: 1px solid #edf2f7;
-    border-bottom: 1px solid #edf2f7;
-    padding: 15px 0;
-    margin-bottom: 30px;
-    color: var(--text-muted);
-    font-size: 0.9rem;
+.navbar ul { list-style: none; display: flex; gap: 30px; margin: 0; }
+.navbar a { 
+    color: var(--text-head); 
+    text-decoration: none; 
+    font-family: sans-serif; 
+    font-weight: 600; 
+    font-size: 0.85rem;
+    transition: 0.3s;
 }
+.navbar a:hover { color: var(--accent); }
 
-/* Interaction Zone */
-.interaction-zone {
-    margin-top: 60px;
-    padding-top: 40px;
-    border-top: 2px solid #edf2f7;
-}
-
-.poll-box {
-    background: #fffaf0;
-    border: 1px solid #feebc8;
-    padding: 30px;
-    border-radius: 8px;
-    text-align: center;
-}
-
-.poll-box button {
-    background: var(--primary);
+/* Premium Hero Section */
+.hero {
+    /* Using a high-end, darkened image of India's Parliament or architecture */
+    background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), 
+                url('https://images.unsplash.com/photo-1548013146-72479768bbaa?q=80&w=1200'); 
+    background-size: cover;
+    background-position: center;
     color: white;
-    padding: 12px 30px;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: transform 0.2s;
+    text-align: center;
+    padding: 120px 20px;
 }
 
-.poll-box button:hover {
-    transform: translateY(-2px);
-    background: var(--accent);
+/* The Article Card Grid */
+.container {
+    max-width: 900px;
+    margin: -60px auto 40px; /* Overlaps the hero slightly */
+    padding: 0 20px;
+}
+
+.article-card {
+    background: white;
+    padding: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
 }
