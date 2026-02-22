@@ -1,79 +1,72 @@
 :root {
-    --primary: #0f172a;    /* Deep Midnight Navy */
-    --accent: #b45309;     /* Burnt Saffron (Classy, not bright) */
-    --bg-light: #fcfcfc;   /* Off-white paper feel */
-    --text-head: #1e293b;
-    --text-body: #334155;
-    --border: #e2e8f0;
+    --ink: #0f172a;        /* Deep Midnight */
+    --gold: #926a2d;       /* Antique Saffron/Gold */
+    --bone: #f8f9fa;       /* Premium Paper Color */
+    --accent-light: #fffcf4; /* Soft cream for highlights */
 }
 
 body {
-    font-family: 'Charter', 'Georgia', serif; /* Serif fonts look more premium for news */
-    background-color: var(--bg-light);
-    color: var(--text-body);
+    /* Premium Texture: Subtle Paper Grain */
+    background-image: url('https://www.transparenttextures.com/patterns/p6.png');
+    background-color: var(--bone);
+    font-family: 'Playfair Display', serif; /* Classic high-end editorial font */
+    color: var(--ink);
     margin: 0;
     line-height: 1.8;
 }
 
-/* Elegant Navbar */
+/* Glassmorphism Navbar */
 .navbar {
-    background: white;
-    border-bottom: 3px solid var(--primary);
-    padding: 1.5rem 10%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 1.2rem 10%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo a {
-    color: var(--primary);
+    color: var(--ink);
     text-decoration: none;
     font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 1.4rem;
+    letter-spacing: 3px;
+    font-size: 1.3rem;
+    border-bottom: 2px solid var(--gold);
 }
-
-.navbar ul { list-style: none; display: flex; gap: 30px; margin: 0; }
-.navbar a { 
-    color: var(--text-head); 
-    text-decoration: none; 
-    font-family: sans-serif; 
-    font-weight: 600; 
-    font-size: 0.85rem;
-    transition: 0.3s;
-}
-.navbar a:hover { color: var(--accent); }
 
 /* Premium Hero Section */
 .hero {
-    min-height: 200px; /* Forces a professional, slim height */
+    background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), 
+                url('https://images.unsplash.com/photo-1524492412937-b28074a5d7da?q=80&w=2000'); /* Taj Mahal Architectural Detail */
+    background-size: cover;
+    background-attachment: fixed; /* Parallax effect for luxury feel */
+    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    color: white;
 }
 
-/* The Article Card Grid */
-.container {
-    max-width: 850px;
-    margin: -40px auto 60px; /* This "pulls" the article up onto the hero image slightly */
-    padding: 0 20px;
-    position: relative;
-    z-index: 10;
-}
-
+/* Elevated Content Card */
 .article-card {
-    background: #ffffff;
-    padding: 50px;
-    border-radius: 0; /* Sharp corners look more "Premium/Newspaper" */
-    border: 1px solid #e2e8f0;
-    border-top: 5px solid var(--primary); /* Thick top border for authority */
-    box-shadow: 0 20px 40px rgba(0,0,0,0.08); /* Deep shadow to separate from background */
+    background: white;
+    padding: 60px;
+    margin-top: -80px;
+    border-radius: 2px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+    border: 1px solid rgba(0,0,0,0.05);
 }
 
-.article-card h3 {
-    font-size: 2rem;
-    color: var(--primary);
-    margin-top: 10px;
-    line-height: 1.3;
+.category-tag {
+    color: var(--gold);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 10px;
 }
