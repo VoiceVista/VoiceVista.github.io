@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharat Insight | Shaping a Stronger Nation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">BHARAT INSIGHT</div>
+        <ul>
+            <li><a href="#">Articles</a></li>
+            <li><a href="#">Editor's Desk</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Building an Informed Nation</h1>
+        <p>Insightful articles on the issues shaping the future of India.</p>
+    </header>
+
+    <main class="container">
+        <article class="post">
+            <span class="category">Editor's Viewpoint</span>
+            <h2>The Future of Digital Education in Rural India</h2>
+            <p class="meta">Published on February 22, 2026 • 5 min read</p>
+            
+            <div class="content">
+                <p>India is at a crossroads where technology meets tradition. As we bridge the digital divide, we must ask: Are we building infrastructure or just installing screens? This week, we explore how local leadership is transforming schools in Bihar and Tamil Nadu...</p>
+                </div>
+
+            <div class="interaction-zone">
+                <h3>Voice Your Opinion</h3>
+                <p>Do you believe rural schools are ready for 100% digital curriculum?</p>
+                
+                <div class="poll-box">
+                    <button onclick="vote('yes')">🇮🇳 Yes, they are ready</button>
+                    <button onclick="vote('no')">⌛ Need more infrastructure</button>
+                    <p id="poll-msg"></p>
+                </div>
+
+                <div class="comments">
+                    <h3>Discussion</h3>
+                    <p>Log in with GitHub to share your perspective.</p>
+                    <div class="giscus"></div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <script>
+        function vote(choice) {
+            document.getElementById('poll-msg').innerText = "Thank you for voting '" + choice + "'! We use these results for our monthly report.";
+        }
+    </script>
+    
+    </body>
+</html>
