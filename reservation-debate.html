@@ -3,74 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Who Truly Benefits? | VoiceVista</title>
+    <title>Who Truly Benefits? | Bharat Insight</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<nav class="navbar">
-    <div class="logo">
-        <a href="index.html">BHARAT INSIGHT</a>
+    <div style="height: 4px; width: 100%; display: flex; position: fixed; top: 0; z-index: 1001;">
+        <div style="flex: 1; background: #FF9933;"></div>
+        <div style="flex: 1; background: #FFFFFF;"></div>
+        <div style="flex: 1; background: #128807;"></div>
     </div>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-    </ul>
-</nav>
+
+    <nav class="navbar">
+        <div class="logo"><a href="index.html">BHARAT INSIGHT</a></div>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero" style="background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), 
+    url('https://images.unsplash.com/photo-1590050752117-23a9d7fc2440?q=80&w=2000'); height: 450px;">
+        <div style="max-width: 800px; text-align: center; padding: 0 20px;">
+            <span class="category-tag" style="color: #FF9933; margin-bottom: 20px;">Editor's Viewpoint</span>
+            <h1 style="font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 5vw, 3rem); color: white; line-height: 1.2;">Rethinking Access, Reimagining Equity</h1>
+        </div>
+    </header>
+
     <main class="container">
-        <article class="post">
-            <span class="category">Editor's Viewpoint</span>
-            <h1>Who Truly Benefits? Rethinking Access Within the Reserved Category</h1>
-            <p class="meta">Published on February 22, 2026 • 6 min read</p>
-            
-            <div class="content">
-                <p>India’s reservation system was established with a clear and powerful objective — to promote social justice and provide opportunities to communities that have historically faced structural disadvantages.</p>
+        <article class="article-card">
+            <p class="meta" style="text-align: center; font-family: 'Inter', sans-serif; text-transform: uppercase; letter-spacing: 2px; font-size: 0.7rem; color: #94a3b8; margin-bottom: 40px;">
+                By Editorial Desk • Published Feb 22, 2026 • 8 Min Read
+            </p>
+
+            <div class="content" style="font-family: 'Inter', sans-serif; font-size: 1.15rem; line-height: 1.9; color: #334155;">
+                <p><span style="float: left; font-family: 'Playfair Display', serif; font-size: 4rem; line-height: 1; padding-right: 12px; color: var(--gold); font-weight: 900;">I</span>ndia’s reservation system was established with a clear and powerful objective — to promote social justice and provide opportunities to communities that have historically faced structural disadvantages. Over the decades, this system has enabled millions to access education, employment, and dignity that might otherwise have remained out of reach.</p>
                 
                 <p>However, an important and sensitive question deserves thoughtful discussion: <strong>Are the benefits within the reserved category consistently reaching those who need them the most?</strong></p>
 
-                <h3>The Emerging Concern</h3>
-                <p>Within any large social group, economic and educational differences naturally exist. Over time, some families within reserved categories have achieved stability and financial security. This progress is a positive outcome of policy support.</p>
+                <h3 style="font-family: 'Playfair Display', serif; color: var(--ink); margin: 40px 0 20px; font-size: 1.8rem;">The Emerging Concern</h3>
+                <p>Within any large social group, economic and educational differences naturally exist. Over time, some families within reserved categories have achieved stability, financial security, and access to quality education. This progress is a positive outcome of policy support and personal effort.</p>
                 
-                <p>Yet, a concern arises when the same relatively advantaged sections continue to access reserved opportunities across generations, while individuals from more vulnerable backgrounds struggle to compete. Access to better schooling and urban exposure creates a significant advantage—even within reserved quotas.</p>
+                <p>Yet, a concern arises when the same relatively advantaged sections continue to access reserved opportunities across generations, while individuals from more vulnerable backgrounds struggle to compete. Access to better schooling and urban exposure creates a significant advantage — even within reserved quotas.</p>
 
-                <h3>The Question of Fair Distribution</h3>
-                <p>The core objective of reservation is empowerment. When access becomes concentrated among families who are already relatively well-positioned, the spirit of the policy may not be fully realized. This is not about undermining the system; it is about ensuring the distribution of opportunities is equitable within the category itself.</p>
-
-                <div class="interaction-zone">
-                    <h3>Voice Your Opinion</h3>
-                    <p>Do you agree with the editor’s view on rethinking access within the reserved category?</p>
-                    
-                    <div class="poll-box">
-                        <button onclick="vote('Yes')">✅ Yes, I agree</button>
-                        <button onclick="vote('No')">❌ No, I disagree</button>
-                        <p id="poll-msg" style="margin-top:15px; font-weight:bold; color:var(--accent);"></p>
-                    </div>
-
-                    <div class="comments">
-                        <h3>Reader Discussion</h3>
-                        <p style="font-size: 0.9rem; color: #666;">Share your thoughts respectfully below. (Requires GitHub login)</p>
-                        </div>
+                <div style="background: var(--accent-light); border-left: 4px solid var(--gold); padding: 30px; margin: 40px 0; font-style: italic; font-family: 'Playfair Display', serif; font-size: 1.3rem;">
+                    "Reservation is a tool for social transformation. Its strength lies in its ability to uplift those who are truly left behind."
                 </div>
+
+                <h3 style="font-family: 'Playfair Display', serif; color: var(--ink); margin: 40px 0 20px; font-size: 1.8rem;">Moving Forward</h3>
+                <p>The goal should not be division or blame, but refinement. Constructive dialogue can help identify ways to improve access for the most economically disadvantaged and strengthen verification mechanisms to ensure fairness.</p>
+            </div>
+
+            <div class="interaction-zone" style="margin-top: 60px; padding-top: 40px; border-top: 1px solid #eee;">
+                <h4 style="font-family: 'Playfair Display', serif; text-align: center; font-size: 1.5rem;">Voice Your Opinion</h4>
+                <p style="text-align: center; font-size: 0.9rem; color: #64748b; margin-bottom: 25px;">Do you agree with the editor's view on rethinking access?</p>
+                
+                <div style="display: flex; justify-content: center; gap: 20px;">
+                    <button onclick="vote('Yes')" style="padding: 12px 35px; border: 1px solid var(--ink); background: var(--ink); color: white; cursor: pointer; font-family: 'Inter', sans-serif; letter-spacing: 1px;">YES, I AGREE</button>
+                    <button onclick="vote('No')" style="padding: 12px 35px; border: 1px solid var(--ink); background: transparent; color: var(--ink); cursor: pointer; font-family: 'Inter', sans-serif; letter-spacing: 1px;">NO, I DISAGREE</button>
+                </div>
+                <p id="poll-msg" style="text-align: center; margin-top: 20px; font-weight: bold; color: var(--gold);"></p>
             </div>
         </article>
-        <div style="margin-top: 50px;">
-            <a href="index.html" style="color: var(--primary); font-weight: bold;">← Back to Home</a>
-        </div>
     </main>
+
+    <footer style="text-align: center; padding: 60px 0; color: #94a3b8; font-size: 0.7rem; letter-spacing: 2px;">
+        © 2026 BHARAT INSIGHT • SHAPING THE NATIONAL DISCOURSE
+    </footer>
 
     <script>
         function vote(choice) {
-            document.getElementById('poll-msg').innerText = "You voted: " + choice + ". Thank you for contributing to the national dialogue.";
+            document.getElementById('poll-msg').innerText = "Thank you for participating in the national dialogue.";
         }
     </script>
-    <footer style="background: var(--primary); color: white; padding: 40px 10%; margin-top: 100px; text-align: center;">
-    <p><strong>VoiceVista: Bharat Insight</strong></p>
-    <p style="opacity: 0.7; font-size: 0.9rem;">Empowering the citizens of India through informed discussion and balanced viewpoints.</p>
-    <div style="margin-top: 20px;">
-        <a href="#" style="color: white; margin: 0 10px;">About</a>
-        <a href="#" style="color: white; margin: 0 10px;">Archives</a>
-        <a href="#" style="color: white; margin: 0 10px;">Contact</a>
-    </div>
-</footer>
 </body>
 </html>
