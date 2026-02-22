@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who Truly Benefits? | VoiceVista</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo"><a href="index.html" style="color:white; text-decoration:none;">BHARAT INSIGHT</a></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Editor's Desk</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <article class="post">
+            <span class="category">Editor's Viewpoint</span>
+            <h1>Who Truly Benefits? Rethinking Access Within the Reserved Category</h1>
+            <p class="meta">Published on February 22, 2026 • 6 min read</p>
+            
+            <div class="content">
+                <p>India’s reservation system was established with a clear and powerful objective — to promote social justice and provide opportunities to communities that have historically faced structural disadvantages.</p>
+                
+                <p>However, an important and sensitive question deserves thoughtful discussion: <strong>Are the benefits within the reserved category consistently reaching those who need them the most?</strong></p>
+
+                <h3>The Emerging Concern</h3>
+                <p>Within any large social group, economic and educational differences naturally exist. Over time, some families within reserved categories have achieved stability and financial security. This progress is a positive outcome of policy support.</p>
+                
+                <p>Yet, a concern arises when the same relatively advantaged sections continue to access reserved opportunities across generations, while individuals from more vulnerable backgrounds struggle to compete. Access to better schooling and urban exposure creates a significant advantage—even within reserved quotas.</p>
+
+                <h3>The Question of Fair Distribution</h3>
+                <p>The core objective of reservation is empowerment. When access becomes concentrated among families who are already relatively well-positioned, the spirit of the policy may not be fully realized. This is not about undermining the system; it is about ensuring the distribution of opportunities is equitable within the category itself.</p>
+
+                <div class="interaction-zone">
+                    <h3>Voice Your Opinion</h3>
+                    <p>Do you agree with the editor’s view on rethinking access within the reserved category?</p>
+                    
+                    <div class="poll-box">
+                        <button onclick="vote('Yes')">✅ Yes, I agree</button>
+                        <button onclick="vote('No')">❌ No, I disagree</button>
+                        <p id="poll-msg" style="margin-top:15px; font-weight:bold; color:var(--accent);"></p>
+                    </div>
+
+                    <div class="comments">
+                        <h3>Reader Discussion</h3>
+                        <p style="font-size: 0.9rem; color: #666;">Share your thoughts respectfully below. (Requires GitHub login)</p>
+                        </div>
+                </div>
+            </div>
+        </article>
+        <div style="margin-top: 50px;">
+            <a href="index.html" style="color: var(--primary); font-weight: bold;">← Back to Home</a>
+        </div>
+    </main>
+
+    <script>
+        function vote(choice) {
+            document.getElementById('poll-msg').innerText = "You voted: " + choice + ". Thank you for contributing to the national dialogue.";
+        }
+    </script>
+</body>
+</html>
